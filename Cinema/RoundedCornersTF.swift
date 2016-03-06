@@ -9,9 +9,10 @@
 import UIKit
 
 class RoundedCornersTF: UITextField {
-
+    
     override func awakeFromNib() {
-        layer.cornerRadius = 25.0
+        layer.cornerRadius = 15.0
+        self.clipsToBounds = true
     }
 
 }

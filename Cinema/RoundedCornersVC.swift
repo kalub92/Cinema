@@ -11,7 +11,7 @@ import UIKit
 class RoundedCornersVC: UIImageView {
 
     override func awakeFromNib() {
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = 15.0
         self.clipsToBounds = true
     }
 }
