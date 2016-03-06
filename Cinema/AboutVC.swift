@@ -10,10 +10,12 @@ import UIKit
 
 class AboutVC: UIViewController {
 
+    @IBOutlet weak var aboutView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        aboutView.layer.cornerRadius = 15.0
+        aboutView.clipsToBounds = true
     }
 
     @IBAction func returnHome(sender: AnyObject) {

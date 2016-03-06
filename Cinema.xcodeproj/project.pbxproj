@@ -34,6 +34,9 @@
 		FC1F4B341C8BBB86001650BA /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B231C8BBB86001650BA /* IQToolbar.swift */; };
 		FC1F4B351C8BBB86001650BA /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B241C8BBB86001650BA /* IQUIView+IQKeyboardToolbar.swift */; };
 		FC1F4B361C8BBB86001650BA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */; };
+		FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */; };
+		FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */; };
+		FC1F4B401C8C2C19001650BA /* ACAnimatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B3F1C8C2C19001650BA /* ACAnimatedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		FC1F4B231C8BBB86001650BA /* IQToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IQToolbar.swift; sourceTree = "<group>"; };
 		FC1F4B241C8BBB86001650BA /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
 		FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersTF.swift; sourceTree = "<group>"; };
+		FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		FC1F4B3F1C8C2C19001650BA /* ACAnimatedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACAnimatedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		FC1F4AE11C8B9A6D001650BA /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
+				FC1F4B3E1C8C2C19001650BA /* ACAnimatedTextField */,
 				FC1F4B111C8BBB86001650BA /* IQKeyboardManagerSwift */,
 				FC1F4AF91C8B9A85001650BA /* Model */,
 				FC1F4AF81C8B9A82001650BA /* View */,
@@ -115,6 +122,7 @@
 				FC1F4B001C8BACDB001650BA /* Rounded Corners */,
 				FC1F4AE41C8B9A6D001650BA /* ViewController.swift */,
 				FC1F4B031C8BB6D9001650BA /* AboutVC.swift */,
+				FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 				FC1F4AFC1C8BA0E4001650BA /* RoundedCornersTVC.swift */,
 				FC1F4AFE1C8BA941001650BA /* RoundedCornersView.swift */,
 				FC1F4B011C8BB2B2001650BA /* CircleImageBounds.swift */,
+				FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */,
 			);
 			name = "Rounded Corners";
 			sourceTree = "<group>";
@@ -209,6 +218,14 @@
 				FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC1F4B3E1C8C2C19001650BA /* ACAnimatedTextField */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F4B3F1C8C2C19001650BA /* ACAnimatedTextField.swift */,
+			);
+			path = ACAnimatedTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +307,7 @@
 				FC1F4B2E1C8BBB86001650BA /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				FC1F4B281C8BBB86001650BA /* IQUIScrollView+Additions.swift in Sources */,
 				FC1F4B2A1C8BBB86001650BA /* IQUIView+Hierarchy.swift in Sources */,
+				FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */,
 				FC1F4B331C8BBB86001650BA /* IQTitleBarButtonItem.swift in Sources */,
 				FC1F4AEB1C8B9A6D001650BA /* Cinema.xcdatamodeld in Sources */,
 				FC1F4B2B1C8BBB86001650BA /* IQUIViewController+Additions.swift in Sources */,
@@ -300,8 +318,10 @@
 				FC1F4AFB1C8B9FDB001650BA /* RoundedCornersVC.swift in Sources */,
 				FC1F4B2F1C8BBB86001650BA /* IQKeyboardManager.swift in Sources */,
 				FC1F4B021C8BB2B2001650BA /* CircleImageBounds.swift in Sources */,
+				FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */,
 				FC1F4B321C8BBB86001650BA /* IQBarButtonItem.swift in Sources */,
 				FC1F4AFF1C8BA941001650BA /* RoundedCornersView.swift in Sources */,
+				FC1F4B401C8C2C19001650BA /* ACAnimatedTextField.swift in Sources */,
 				FC1F4B341C8BBB86001650BA /* IQToolbar.swift in Sources */,
 				FC1F4B271C8BBB86001650BA /* IQNSArray+Sort.swift in Sources */,
 				FC1F4B2D1C8BBB86001650BA /* IQKeyboardManagerConstants.swift in Sources */,

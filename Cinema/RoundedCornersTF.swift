@@ -1,5 +1,5 @@
 //
-//  RoundedCornersView.swift
+//  RoundedCornersTF.swift
 //  Cinema
 //
 //  Created by Caleb Stultz on 3/6/16.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class RoundedCornersView: UIView {
+class RoundedCornersTF: UITextField {
 
     override func awakeFromNib() {
-        layer.cornerRadius = 15.0
-        self.clipsToBounds = true
+        layer.cornerRadius = 25.0
     }
+
 }
