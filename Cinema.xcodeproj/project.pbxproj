@@ -13,6 +13,11 @@
 		FC1F4AEB1C8B9A6D001650BA /* Cinema.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4AE91C8B9A6D001650BA /* Cinema.xcdatamodeld */; };
 		FC1F4AED1C8B9A6D001650BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1F4AEC1C8B9A6D001650BA /* Assets.xcassets */; };
 		FC1F4AF01C8B9A6D001650BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1F4AEE1C8B9A6D001650BA /* LaunchScreen.storyboard */; };
+		FC1F4AFB1C8B9FDB001650BA /* RoundedCornersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4AFA1C8B9FDB001650BA /* RoundedCornersVC.swift */; };
+		FC1F4AFD1C8BA0E5001650BA /* RoundedCornersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4AFC1C8BA0E4001650BA /* RoundedCornersTVC.swift */; };
+		FC1F4AFF1C8BA941001650BA /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4AFE1C8BA941001650BA /* RoundedCornersView.swift */; };
+		FC1F4B021C8BB2B2001650BA /* CircleImageBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B011C8BB2B2001650BA /* CircleImageBounds.swift */; };
+		FC1F4B041C8BB6D9001650BA /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B031C8BB6D9001650BA /* AboutVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		FC1F4AEC1C8B9A6D001650BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1F4AEF1C8B9A6D001650BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1F4AF11C8B9A6D001650BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1F4AFA1C8B9FDB001650BA /* RoundedCornersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersVC.swift; sourceTree = "<group>"; };
+		FC1F4AFC1C8BA0E4001650BA /* RoundedCornersTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersTVC.swift; sourceTree = "<group>"; };
+		FC1F4AFE1C8BA941001650BA /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		FC1F4B011C8BB2B2001650BA /* CircleImageBounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageBounds.swift; sourceTree = "<group>"; };
+		FC1F4B031C8BB6D9001650BA /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		FC1F4AE11C8B9A6D001650BA /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
+				FC1F4AF91C8B9A85001650BA /* Model */,
+				FC1F4AF81C8B9A82001650BA /* View */,
+				FC1F4AF71C8B9A7E001650BA /* Controller */,
 				FC1F4AE21C8B9A6D001650BA /* AppDelegate.swift */,
-				FC1F4AE41C8B9A6D001650BA /* ViewController.swift */,
-				FC1F4AE61C8B9A6D001650BA /* Main.storyboard */,
 				FC1F4AEC1C8B9A6D001650BA /* Assets.xcassets */,
-				FC1F4AEE1C8B9A6D001650BA /* LaunchScreen.storyboard */,
 				FC1F4AF11C8B9A6D001650BA /* Info.plist */,
-				FC1F4AE91C8B9A6D001650BA /* Cinema.xcdatamodeld */,
 			);
 			path = Cinema;
+			sourceTree = "<group>";
+		};
+		FC1F4AF71C8B9A7E001650BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F4B001C8BACDB001650BA /* Rounded Corners */,
+				FC1F4AE41C8B9A6D001650BA /* ViewController.swift */,
+				FC1F4B031C8BB6D9001650BA /* AboutVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FC1F4AF81C8B9A82001650BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F4AEE1C8B9A6D001650BA /* LaunchScreen.storyboard */,
+				FC1F4AE61C8B9A6D001650BA /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC1F4AF91C8B9A85001650BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F4AE91C8B9A6D001650BA /* Cinema.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FC1F4B001C8BACDB001650BA /* Rounded Corners */ = {
+			isa = PBXGroup;
+			children = (
+				FC1F4AFA1C8B9FDB001650BA /* RoundedCornersVC.swift */,
+				FC1F4AFC1C8BA0E4001650BA /* RoundedCornersTVC.swift */,
+				FC1F4AFE1C8BA941001650BA /* RoundedCornersView.swift */,
+				FC1F4B011C8BB2B2001650BA /* CircleImageBounds.swift */,
+			);
+			name = "Rounded Corners";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +187,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC1F4AE51C8B9A6D001650BA /* ViewController.swift in Sources */,
+				FC1F4AFD1C8BA0E5001650BA /* RoundedCornersTVC.swift in Sources */,
 				FC1F4AE31C8B9A6D001650BA /* AppDelegate.swift in Sources */,
 				FC1F4AEB1C8B9A6D001650BA /* Cinema.xcdatamodeld in Sources */,
+				FC1F4B041C8BB6D9001650BA /* AboutVC.swift in Sources */,
+				FC1F4AFB1C8B9FDB001650BA /* RoundedCornersVC.swift in Sources */,
+				FC1F4B021C8BB2B2001650BA /* CircleImageBounds.swift in Sources */,
+				FC1F4AFF1C8BA941001650BA /* RoundedCornersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
