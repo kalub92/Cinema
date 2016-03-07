@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } else {
             return MovieCell()
         }
-        
+            
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -62,6 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return movies.count
     }
     
+
     func reloadFromAfar() {
         fetchAndSetResults()
         tableView.reloadData()

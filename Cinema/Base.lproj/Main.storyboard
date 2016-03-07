@@ -52,22 +52,6 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="uNr-0v-90q">
-                                                    <rect key="frame" x="163" y="55" width="429" height="107"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="107" id="ajr-RT-JjB"/>
-                                                        <constraint firstAttribute="width" constant="429" id="pZs-M3-4WT"/>
-                                                    </constraints>
-                                                    <string key="text">Somewhere there is an audience for "UHF," I have no doubt, and somewhere this weekend someone may laugh at some of its attempts at humor. "Weird Al" Yankovic has had a lot of success with his parodies: songs and music videos spinning off of Michael Jackson and other easy targets. But this is the dreariest comedy in many a month, a depressing slog through recycled comic formulas. Those who laugh at "UHF" should inspire our admiration; in these dreary times we must treasure the easily amused.</string>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="15"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="pZs-M3-4WT"/>
-                                                        </mask>
-                                                    </variation>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinema-Imdb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="RT3-Vx-zIk">
                                                     <rect key="frame" x="163" y="179" width="54" height="28"/>
                                                     <constraints>
@@ -88,6 +72,22 @@
                                                         <mask key="constraints">
                                                             <exclude reference="Zof-qQ-ozf"/>
                                                             <exclude reference="cTj-tm-8bV"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="uNr-0v-90q">
+                                                    <rect key="frame" x="163" y="55" width="429" height="107"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="107" id="ajr-RT-JjB"/>
+                                                        <constraint firstAttribute="width" constant="429" id="pZs-M3-4WT"/>
+                                                    </constraints>
+                                                    <string key="text">Somewhere there is an audience for "UHF," I have no doubt, and somewhere this weekend someone may laugh at some of its attempts at humor. "Weird Al" Yankovic has had a lot of success with his parodies: songs and music videos spinning off of Michael Jackson and other easy targets. But this is the dreariest comedy in many a month, a depressing slog through recycled comic formulas. Those who laugh at "UHF" should inspire our admiration; in these dreary times we must treasure the easily amused.</string>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="pZs-M3-4WT"/>
                                                         </mask>
                                                     </variation>
                                                 </label>
@@ -119,6 +119,7 @@
                                             <outlet property="movieImg" destination="iYE-Og-5iY" id="kgi-Rl-9pU"/>
                                             <outlet property="movieReview" destination="uNr-0v-90q" id="r7R-Ar-GSB"/>
                                             <outlet property="movieTitle" destination="O6o-vA-Nfc" id="HGt-6g-Ktz"/>
+                                            <segue destination="cJn-b5-QUL" kind="presentation" modalPresentationStyle="formSheet" id="3ty-vD-LVx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -618,6 +619,135 @@
             </objects>
             <point key="canvasLocation" x="1834" y="583"/>
         </scene>
+        <!--DetailVC-->
+        <scene sceneID="ArW-JP-v5f">
+            <objects>
+                <viewController id="cJn-b5-QUL" customClass="DetailVC" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PsI-34-Yeh"/>
+                        <viewControllerLayoutGuide type="bottom" id="DrJ-27-fhf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qyy-ht-dwn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGj-5T-gK9" customClass="RoundedCornersView" customModule="Cinema" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AzW-4N-Z3G">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="555"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moviePlaceholderDetail" translatesAutoresizingMaskIntoConstraints="NO" id="FRd-zz-kWF">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="366"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UHF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="pD2-g8-2CR">
+                                                <rect key="frame" x="250" y="371" width="61" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="cLW-Uq-VKA"/>
+                                                    <constraint firstAttribute="width" constant="429" id="qgl-21-GrB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="qgl-21-GrB"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-xv-zDw">
+                                                <rect key="frame" x="5" y="415" width="550" height="107"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="107" id="Fce-aa-E9d"/>
+                                                    <constraint firstAttribute="width" constant="429" id="hbD-z8-n9z"/>
+                                                </constraints>
+                                                <string key="text">Somewhere there is an audience for "UHF," I have no doubt, and somewhere this weekend someone may laugh at some of its attempts at humor. "Weird Al" Yankovic has had a lot of success with his parodies: songs and music videos spinning off of Michael Jackson and other easy targets. But this is the dreariest comedy in many a month, a depressing slog through recycled comic formulas. Those who laugh at "UHF" should inspire our admiration; in these dreary times we must treasure the easily amused.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-UltraLightItalic" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hbD-z8-n9z"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-kW-Klh">
+                                                <rect key="frame" x="112" y="527" width="337" height="28"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinema-Imdb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D69-6X-jru">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="28" id="bQk-Ff-E86"/>
+                                                            <constraint firstAttribute="width" constant="54" id="jd9-Ir-Oar"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt0098546/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-sL-LKZ">
+                                                        <rect key="frame" x="74" y="0.0" width="263" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="09g-2R-6JC"/>
+                                                            <constraint firstAttribute="width" constant="367" id="oa5-st-IGg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="09g-2R-6JC"/>
+                                                                <exclude reference="oa5-st-IGg"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eyp-xv-zDw" firstAttribute="leading" secondItem="AzW-4N-Z3G" secondAttribute="leading" constant="5" id="QyH-tX-Gbm"/>
+                                            <constraint firstAttribute="trailing" secondItem="eyp-xv-zDw" secondAttribute="trailing" constant="5" id="xz4-bU-t5r"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ia-He-ihG" userLabel="cancelBtn">
+                                        <rect key="frame" x="510" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="TKV-Ar-wz3"/>
+                                            <constraint firstAttribute="height" constant="50" id="Zuy-Eq-uaW"/>
+                                        </constraints>
+                                        <state key="normal" image="cancelBtn"/>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="cJn-b5-QUL" eventType="touchUpInside" id="g8I-EB-vnH"/>
+                                            <action selector="onCancelPressed:" destination="eQz-vD-kg0" eventType="touchUpInside" id="KA7-o5-pQC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AzW-4N-Z3G" secondAttribute="bottom" constant="5" id="4af-RU-J9S"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ia-He-ihG" secondAttribute="trailing" id="AYv-cA-1We"/>
+                                    <constraint firstItem="AzW-4N-Z3G" firstAttribute="top" secondItem="wGj-5T-gK9" secondAttribute="top" id="H8v-S8-MUU"/>
+                                    <constraint firstItem="8Ia-He-ihG" firstAttribute="top" secondItem="wGj-5T-gK9" secondAttribute="top" id="XC0-8Z-eZf"/>
+                                    <constraint firstAttribute="trailing" secondItem="AzW-4N-Z3G" secondAttribute="trailing" id="j0I-eV-KYp"/>
+                                    <constraint firstItem="AzW-4N-Z3G" firstAttribute="leading" secondItem="wGj-5T-gK9" secondAttribute="leading" id="oYB-Rf-3n8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47450980390000003" green="0.27450980390000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wGj-5T-gK9" firstAttribute="top" secondItem="qyy-ht-dwn" secondAttribute="top" constant="20" id="0rC-oc-fTf"/>
+                            <constraint firstAttribute="trailing" secondItem="wGj-5T-gK9" secondAttribute="trailing" constant="20" id="Qco-GG-E3f"/>
+                            <constraint firstItem="wGj-5T-gK9" firstAttribute="leading" secondItem="qyy-ht-dwn" secondAttribute="leading" constant="20" id="W5V-6N-82t"/>
+                            <constraint firstItem="DrJ-27-fhf" firstAttribute="top" secondItem="wGj-5T-gK9" secondAttribute="bottom" constant="20" id="bXW-bo-Hpk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="moviePoster" destination="FRd-zz-kWF" id="OOD-Uj-dSO"/>
+                        <outlet property="movieReview" destination="eyp-xv-zDw" id="w4K-Ds-RWZ"/>
+                        <outlet property="movieTitle" destination="pD2-g8-2CR" id="wWQ-eS-gDn"/>
+                        <outlet property="movieURL" destination="DYg-sL-LKZ" id="xz3-vA-p6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLq-Pm-yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="1362"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Cinema-Imdb-icon" width="512" height="267"/>
@@ -625,6 +755,7 @@
         <image name="caleb" width="327" height="327"/>
         <image name="cancelBtn" width="150" height="150"/>
         <image name="moviePlaceholder" width="147" height="207"/>
+        <image name="moviePlaceholderDetail" width="647" height="907"/>
         <image name="ticket" width="1890" height="1896"/>
     </resources>
 </document>

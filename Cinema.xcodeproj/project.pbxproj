@@ -41,6 +41,7 @@
 		FC1F4B361C8BBB86001650BA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */; };
 		FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */; };
 		FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */; };
+		FCD4F90C1C8DF02C000BED88 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersTF.swift; sourceTree = "<group>"; };
 		FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				FC1F4AEE1C8B9A6D001650BA /* LaunchScreen.storyboard */,
 				FC1F4AE61C8B9A6D001650BA /* Main.storyboard */,
 				FC0946D41C8C43CC0054BEB2 /* MovieCell.swift */,
+				FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				FC1F4B301C8BBB86001650BA /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				FC0947151C8CBA1B0054BEB2 /* CardSwipeVC.swift in Sources */,
 				FC1F4B291C8BBB86001650BA /* IQUITextFieldView+Additions.swift in Sources */,
+				FCD4F90C1C8DF02C000BED88 /* DetailVC.swift in Sources */,
 				FC1F4B351C8BBB86001650BA /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				FC0946CF1C8C43270054BEB2 /* Movie.swift in Sources */,
 				FC0946D51C8C43CC0054BEB2 /* MovieCell.swift in Sources */,
