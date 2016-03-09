@@ -671,8 +671,8 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-kW-Klh">
-                                                <rect key="frame" x="112" y="522" width="337" height="28"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-kW-Klh">
+                                                <rect key="frame" x="117" y="522" width="327" height="28"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinema-Imdb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D69-6X-jru">
                                                         <rect key="frame" x="0.0" y="0.0" width="54" height="28"/>
@@ -681,8 +681,8 @@
                                                             <constraint firstAttribute="width" constant="54" id="jd9-Ir-Oar"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt0098546/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-sL-LKZ">
-                                                        <rect key="frame" x="74" y="0.0" width="263" height="28"/>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="http://www.imdb.com/title/tt0098546/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-sL-LKZ">
+                                                        <rect key="frame" x="64" y="0.0" width="263" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="09g-2R-6JC"/>
                                                             <constraint firstAttribute="width" constant="367" id="oa5-st-IGg"/>
