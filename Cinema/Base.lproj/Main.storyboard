@@ -656,9 +656,10 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-xv-zDw">
-                                                <rect key="frame" x="5" y="410" width="550" height="107"/>
+                                                <rect key="frame" x="10" y="410" width="540" height="107"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="107" id="Fce-aa-E9d"/>
+                                                    <constraint firstAttribute="width" constant="540" id="LmZ-fT-CyT"/>
                                                     <constraint firstAttribute="width" constant="429" id="hbD-z8-n9z"/>
                                                 </constraints>
                                                 <string key="text">Somewhere there is an audience for "UHF," I have no doubt, and somewhere this weekend someone may laugh at some of its attempts at humor. "Weird Al" Yankovic has had a lot of success with his parodies: songs and music videos spinning off of Michael Jackson and other easy targets. But this is the dreariest comedy in many a month, a depressing slog through recycled comic formulas. Those who laugh at "UHF" should inspire our admiration; in these dreary times we must treasure the easily amused.</string>
@@ -667,11 +668,12 @@
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
+                                                        <exclude reference="LmZ-fT-CyT"/>
                                                         <exclude reference="hbD-z8-n9z"/>
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-kW-Klh">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-kW-Klh">
                                                 <rect key="frame" x="117" y="522" width="327" height="28"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cinema-Imdb-icon" translatesAutoresizingMaskIntoConstraints="NO" id="D69-6X-jru">
@@ -681,7 +683,7 @@
                                                             <constraint firstAttribute="width" constant="54" id="jd9-Ir-Oar"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="http://www.imdb.com/title/tt0098546/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-sL-LKZ">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt0098546/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="DYg-sL-LKZ">
                                                         <rect key="frame" x="64" y="0.0" width="263" height="28"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="09g-2R-6JC"/>
@@ -701,12 +703,16 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="eyp-xv-zDw" firstAttribute="leading" secondItem="AzW-4N-Z3G" secondAttribute="leading" constant="5" id="QyH-tX-Gbm"/>
+                                            <constraint firstAttribute="trailing" secondItem="eyp-xv-zDw" secondAttribute="trailing" constant="10" id="7RK-Uy-vWV"/>
+                                            <constraint firstItem="eyp-xv-zDw" firstAttribute="leading" secondItem="AzW-4N-Z3G" secondAttribute="leading" constant="5" id="Mcj-5s-7Sa"/>
+                                            <constraint firstItem="eyp-xv-zDw" firstAttribute="leading" secondItem="AzW-4N-Z3G" secondAttribute="leading" constant="10" id="QyH-tX-Gbm"/>
                                             <constraint firstAttribute="bottom" secondItem="aYh-kW-Klh" secondAttribute="bottom" id="tMa-20-pPh"/>
                                             <constraint firstAttribute="trailing" secondItem="eyp-xv-zDw" secondAttribute="trailing" constant="5" id="xz4-bU-t5r"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
+                                                <exclude reference="Mcj-5s-7Sa"/>
+                                                <exclude reference="xz4-bU-t5r"/>
                                                 <exclude reference="tMa-20-pPh"/>
                                             </mask>
                                         </variation>
