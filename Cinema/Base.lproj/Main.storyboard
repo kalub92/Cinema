@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
         <!--Cinema-->
@@ -119,7 +120,10 @@
                                             <outlet property="movieImg" destination="iYE-Og-5iY" id="kgi-Rl-9pU"/>
                                             <outlet property="movieReview" destination="uNr-0v-90q" id="r7R-Ar-GSB"/>
                                             <outlet property="movieTitle" destination="O6o-vA-Nfc" id="HGt-6g-Ktz"/>
-                                            <segue destination="cJn-b5-QUL" kind="presentation" identifier="loadDetail" id="790-lL-vgb"/>
+                                            <segue destination="cJn-b5-QUL" kind="presentation" identifier="loadDetail" modalPresentationStyle="overCurrentContext" id="2dZ-i8-nDE">
+                                                <segue key="commit" inheritsFrom="parent" id="PcX-w0-BB2"/>
+                                                <segue key="preview" inheritsFrom="commit" id="H1G-F9-EMX"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -145,13 +149,13 @@
                         <barButtonItem key="leftBarButtonItem" title="About" style="plain" id="gnO-9O-yTN">
                             <color key="tintColor" red="0.42745098040000001" green="0.22352941179999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="rTM-ma-Nq8" kind="showDetail" id="GTw-Nr-gea"/>
+                                <segue destination="rTM-ma-Nq8" kind="presentation" modalPresentationStyle="overCurrentContext" id="GTw-Nr-gea"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="iCM-wr-kU4">
                             <color key="tintColor" red="0.42745098040000001" green="0.22352941179999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="eQz-vD-kg0" kind="showDetail" id="mGK-kW-wDl"/>
+                                <segue destination="eQz-vD-kg0" kind="presentation" modalPresentationStyle="overCurrentContext" id="mGK-kW-wDl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -175,9 +179,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-dP-tdk">
+                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-dP-tdk">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRJ-CI-F8e">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
@@ -379,7 +383,7 @@
                                 </variation>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="d6L-dP-tdk" secondAttribute="trailing" id="61F-vA-UmY"/>
@@ -414,6 +418,7 @@
                         <outlet property="movieImg" destination="fI2-mB-2iv" id="hqL-UW-8ET"/>
                         <outlet property="movieReview" destination="kjb-KK-vX2" id="rvp-vL-r0w"/>
                         <outlet property="movieTitle" destination="HMU-2X-ony" id="e50-h7-y3l"/>
+                        <outlet property="transparentView" destination="d6L-dP-tdk" id="JGg-UZ-i5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6d-Ap-F4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -451,9 +456,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acC-hJ-H2R">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acC-hJ-H2R">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onH-6x-UfT" customClass="RoundedCornersView" customModule="Cinema" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
@@ -585,7 +590,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="onH-6x-UfT" firstAttribute="top" secondItem="LjU-SZ-hey" secondAttribute="top" constant="20" id="7Al-N6-Il6"/>
                             <constraint firstItem="onH-6x-UfT" firstAttribute="top" secondItem="LjU-SZ-hey" secondAttribute="top" id="A8w-YF-DTL"/>
@@ -613,6 +618,7 @@
                     </view>
                     <connections>
                         <outlet property="aboutView" destination="onH-6x-UfT" id="CsM-To-dtg"/>
+                        <outlet property="transparentView" destination="acC-hJ-H2R" id="agr-KX-WJr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLg-rT-Wdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -622,7 +628,7 @@
         <!--DetailVC-->
         <scene sceneID="ArW-JP-v5f">
             <objects>
-                <viewController id="cJn-b5-QUL" customClass="DetailVC" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="cJn-b5-QUL" customClass="DetailVC" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PsI-34-Yeh"/>
                         <viewControllerLayoutGuide type="bottom" id="DrJ-27-fhf"/>
@@ -631,6 +637,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3e-u6-e53">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGj-5T-gK9" customClass="RoundedCornersView" customModule="Cinema" customModuleProvider="target">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
                                 <subviews>
@@ -725,7 +735,7 @@
                                         </constraints>
                                         <state key="normal" image="cancelBtn"/>
                                         <connections>
-                                            <action selector="cancelBtn:" destination="cJn-b5-QUL" eventType="touchUpInside" id="g8I-EB-vnH"/>
+                                            <action selector="cancelBtn:" destination="cJn-b5-QUL" eventType="touchUpInside" id="fiq-MB-tHP"/>
                                             <action selector="onCancelPressed:" destination="eQz-vD-kg0" eventType="touchUpInside" id="KA7-o5-pQC"/>
                                         </connections>
                                     </button>
@@ -741,12 +751,16 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.47450980390000003" green="0.27450980390000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wGj-5T-gK9" firstAttribute="top" secondItem="qyy-ht-dwn" secondAttribute="top" constant="20" id="0rC-oc-fTf"/>
+                            <constraint firstItem="H3e-u6-e53" firstAttribute="top" secondItem="qyy-ht-dwn" secondAttribute="top" id="4GV-tc-56D"/>
+                            <constraint firstAttribute="trailing" secondItem="H3e-u6-e53" secondAttribute="trailing" id="NUC-vK-TmZ"/>
                             <constraint firstAttribute="trailing" secondItem="wGj-5T-gK9" secondAttribute="trailing" constant="20" id="Qco-GG-E3f"/>
                             <constraint firstItem="wGj-5T-gK9" firstAttribute="leading" secondItem="qyy-ht-dwn" secondAttribute="leading" constant="20" id="W5V-6N-82t"/>
                             <constraint firstItem="DrJ-27-fhf" firstAttribute="top" secondItem="wGj-5T-gK9" secondAttribute="bottom" constant="20" id="bXW-bo-Hpk"/>
+                            <constraint firstItem="DrJ-27-fhf" firstAttribute="top" secondItem="H3e-u6-e53" secondAttribute="bottom" id="spB-qX-to2"/>
+                            <constraint firstItem="H3e-u6-e53" firstAttribute="leading" secondItem="qyy-ht-dwn" secondAttribute="leading" id="ul7-ab-VbB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -754,11 +768,12 @@
                         <outlet property="movieReview" destination="eyp-xv-zDw" id="w4K-Ds-RWZ"/>
                         <outlet property="movieTitle" destination="pD2-g8-2CR" id="wWQ-eS-gDn"/>
                         <outlet property="movieURL" destination="DYg-sL-LKZ" id="xz3-vA-p6V"/>
+                        <outlet property="transparentView" destination="H3e-u6-e53" id="s9g-gE-XQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLq-Pm-yfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="1362"/>
+            <point key="canvasLocation" x="1679" y="1289"/>
         </scene>
     </scenes>
     <resources>
@@ -770,4 +785,7 @@
         <image name="moviePlaceholderDetail" width="647" height="907"/>
         <image name="ticket" width="1890" height="1896"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2dZ-i8-nDE"/>
+    </inferredMetricsTieBreakers>
 </document>

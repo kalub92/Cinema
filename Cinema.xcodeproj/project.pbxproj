@@ -130,6 +130,7 @@
 			children = (
 				FC1F4B001C8BACDB001650BA /* Rounded Corners */,
 				FC1F4AE41C8B9A6D001650BA /* ViewController.swift */,
+				FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */,
 				FC1F4B031C8BB6D9001650BA /* AboutVC.swift */,
 				FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */,
 				FC0947141C8CBA1B0054BEB2 /* CardSwipeVC.swift */,
@@ -143,7 +144,6 @@
 				FC1F4AEE1C8B9A6D001650BA /* LaunchScreen.storyboard */,
 				FC1F4AE61C8B9A6D001650BA /* Main.storyboard */,
 				FC0946D41C8C43CC0054BEB2 /* MovieCell.swift */,
-				FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -453,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.Cinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -464,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.Cinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -13,5 +13,9 @@ class RoundedCornersView: UIView {
     override func awakeFromNib() {
         layer.cornerRadius = 15.0
         self.clipsToBounds = true
+        self.layer.shadowColor = UIColor.blackColor().CGColor
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 30
+        self.layer.shadowOffset = CGSize(width: 5, height: 5)
     }
 }

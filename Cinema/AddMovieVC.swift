@@ -16,8 +16,7 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     @IBOutlet weak var movieTitle: RoundedCornersTF!
     @IBOutlet weak var movieReview: RoundedCornersTF!
     @IBOutlet weak var imdbLink: RoundedCornersTF!
-    @IBOutlet weak var addMovie: UIButton!
-    
+    @IBOutlet weak var transparentView: UIView!
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -27,6 +26,12 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         imagePicker.delegate = self
         addMovieView.layer.cornerRadius = 15.0
         addMovieView.clipsToBounds = true
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        UIView.animateWithDuration(0.7, animations: {
+            self.transparentView.alpha = 0.7
+        })
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {

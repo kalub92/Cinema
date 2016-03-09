@@ -16,6 +16,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieReview: UILabel!
     @IBOutlet weak var movieURL: UILabel!
+    @IBOutlet weak var transparentView: UIView!
     
     var movies = [Movie]()
     var indexPath: NSIndexPath!
@@ -27,6 +28,9 @@ class DetailVC: UIViewController {
         fetchAndSetResults()
         let movie = movies[indexPath.row]
         configureDetails(movie)
+        UIView.animateWithDuration(0.7, animations: {
+            self.transparentView.alpha = 0.7
+        })
     }
     
     func fetchAndSetResults() {
@@ -49,7 +53,6 @@ class DetailVC: UIViewController {
         movieURL.text = movie.link
     }
 
-    
     @IBAction func cancelBtn(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
