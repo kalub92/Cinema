@@ -119,7 +119,7 @@
                                             <outlet property="movieImg" destination="iYE-Og-5iY" id="kgi-Rl-9pU"/>
                                             <outlet property="movieReview" destination="uNr-0v-90q" id="r7R-Ar-GSB"/>
                                             <outlet property="movieTitle" destination="O6o-vA-Nfc" id="HGt-6g-Ktz"/>
-                                            <segue destination="cJn-b5-QUL" kind="presentation" modalPresentationStyle="formSheet" id="3ty-vD-LVx"/>
+                                            <segue destination="cJn-b5-QUL" kind="presentation" identifier="loadDetail" id="790-lL-vgb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -655,7 +655,7 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-xv-zDw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eyp-xv-zDw">
                                                 <rect key="frame" x="5" y="415" width="550" height="107"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="107" id="Fce-aa-E9d"/>

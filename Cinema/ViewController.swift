@@ -62,10 +62,30 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return movies.count
     }
     
+    func getMovie(indexPath: NSIndexPath) -> Movie {
+        return self.movies[indexPath.row]
+    }
+    
+    @IBAction func loadDetailView(sender: MovieCell) {
+        performSegueWithIdentifier("loadDetail", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "loadDetail" {
+        let loadDetailView = segue.destinationViewController as! DetailVC
+            if let selectedMovieCell = sender as? MovieCell {
+                loadDetailView.indexPath = tableView.indexPathForCell(selectedMovieCell)
+            }
 
+        }
+    }
+    
     func reloadFromAfar() {
         fetchAndSetResults()
         tableView.reloadData()
     }
+    
+
     
 }

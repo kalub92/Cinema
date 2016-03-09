@@ -18,11 +18,15 @@ class DetailVC: UIViewController {
     @IBOutlet weak var movieURL: UILabel!
     
     var movies = [Movie]()
+    var indexPath: NSIndexPath!
  
     var fetchedResultsController: NSFetchedResultsController!
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         fetchAndSetResults()
+        let movie = movies[indexPath.row]
+        configureDetails(movie)
     }
     
     func fetchAndSetResults() {
@@ -36,6 +40,13 @@ class DetailVC: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
+    }
+    
+    func configureDetails(movie: Movie) {
+        movieTitle.text = movie.title
+        moviePoster.image = movie.getMovieImg()
+        movieReview.text = movie.review
+        movieURL.text = movie.link
     }
 
     
