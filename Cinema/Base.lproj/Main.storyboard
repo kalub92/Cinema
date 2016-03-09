@@ -207,7 +207,7 @@
                                         <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2"/>
                                         <state key="normal" title="+ ADD POSTER">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="20" y="86" width="179" height="244"/>
@@ -430,10 +430,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d7n-cA-USK" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" alpha="0.69999999999999996" contentMode="scaleToFill" id="FYI-yv-mbr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="0.35331357758620691" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
