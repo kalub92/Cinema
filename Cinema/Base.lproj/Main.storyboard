@@ -155,7 +155,7 @@
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="iCM-wr-kU4">
                             <color key="tintColor" red="0.42745098040000001" green="0.22352941179999999" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="eQz-vD-kg0" kind="presentation" modalPresentationStyle="overCurrentContext" id="mGK-kW-wDl"/>
+                                <segue destination="eQz-vD-kg0" kind="presentation" id="mGK-kW-wDl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -179,10 +179,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-dP-tdk">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRJ-CI-F8e">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
                                 <subviews>
@@ -383,11 +379,9 @@
                                 </variation>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="d6L-dP-tdk" secondAttribute="trailing" id="61F-vA-UmY"/>
-                            <constraint firstItem="Ldt-lR-bgg" firstAttribute="top" secondItem="d6L-dP-tdk" secondAttribute="bottom" id="EVi-5K-QuY"/>
                             <constraint firstItem="rRJ-CI-F8e" firstAttribute="top" secondItem="Omf-5A-QNb" secondAttribute="top" constant="20" id="Gtr-P5-wQ7"/>
                             <constraint firstItem="unj-yn-tVr" firstAttribute="top" secondItem="ld1-O9-8rI" secondAttribute="bottom" constant="267" id="H9p-iB-iF9"/>
                             <constraint firstAttribute="trailing" secondItem="rRJ-CI-F8e" secondAttribute="trailing" constant="20" id="NiC-TN-zoE"/>
@@ -395,13 +389,11 @@
                             <constraint firstItem="Ldt-lR-bgg" firstAttribute="top" secondItem="rRJ-CI-F8e" secondAttribute="bottom" id="UV1-HT-tH1"/>
                             <constraint firstItem="rRJ-CI-F8e" firstAttribute="leading" secondItem="Omf-5A-QNb" secondAttribute="leading" constant="20" id="Y5p-tB-RAf"/>
                             <constraint firstItem="unj-yn-tVr" firstAttribute="leading" secondItem="Omf-5A-QNb" secondAttribute="leadingMargin" constant="20" id="Z7z-Xn-V04"/>
-                            <constraint firstItem="d6L-dP-tdk" firstAttribute="top" secondItem="Omf-5A-QNb" secondAttribute="top" id="b7L-oy-U58"/>
                             <constraint firstAttribute="trailingMargin" secondItem="unj-yn-tVr" secondAttribute="trailing" constant="20" id="dny-0b-F5q"/>
                             <constraint firstItem="Ldt-lR-bgg" firstAttribute="top" secondItem="rRJ-CI-F8e" secondAttribute="bottom" constant="20" id="gN4-pJ-pCW"/>
                             <constraint firstItem="rRJ-CI-F8e" firstAttribute="top" secondItem="Omf-5A-QNb" secondAttribute="top" id="gwq-AS-Kat"/>
                             <constraint firstItem="rRJ-CI-F8e" firstAttribute="leading" secondItem="Omf-5A-QNb" secondAttribute="leading" id="ieW-94-pyY"/>
                             <constraint firstAttribute="trailing" secondItem="rRJ-CI-F8e" secondAttribute="trailing" id="xBs-nW-WF2"/>
-                            <constraint firstItem="d6L-dP-tdk" firstAttribute="leading" secondItem="Omf-5A-QNb" secondAttribute="leading" id="y5Z-sl-8W7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -418,7 +410,6 @@
                         <outlet property="movieImg" destination="fI2-mB-2iv" id="hqL-UW-8ET"/>
                         <outlet property="movieReview" destination="kjb-KK-vX2" id="rvp-vL-r0w"/>
                         <outlet property="movieTitle" destination="HMU-2X-ony" id="e50-h7-y3l"/>
-                        <outlet property="transparentView" destination="d6L-dP-tdk" id="JGg-UZ-i5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6d-Ap-F4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -548,7 +539,7 @@
                                         </variation>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47450980390000003" green="0.27450980390000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.42745098039215684" green="0.22352941176470587" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="D1Q-Wb-otu" firstAttribute="centerY" secondItem="onH-6x-UfT" secondAttribute="centerY" id="08R-8Y-0is"/>
                                     <constraint firstItem="D1Q-Wb-otu" firstAttribute="centerY" secondItem="onH-6x-UfT" secondAttribute="centerY" id="XHe-GL-TAb"/>
