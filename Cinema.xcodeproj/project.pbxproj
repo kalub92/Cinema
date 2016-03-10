@@ -41,6 +41,8 @@
 		FC1F4B361C8BBB86001650BA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */; };
 		FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */; };
 		FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */; };
+		FC61D9AF1C91E585000F13DD /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */; };
+		FC61D9B11C91E5AF000F13DD /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC61D9B01C91E5AF000F13DD /* Interactor.swift */; };
 		FCD4F90C1C8DF02C000BED88 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		FC1F4B261C8BBB86001650BA /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
 		FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersTF.swift; sourceTree = "<group>"; };
 		FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
+		FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DismissAnimator.swift; path = ../DismissAnimator.swift; sourceTree = "<group>"; };
+		FC61D9B01C91E5AF000F13DD /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = ../Interactor.swift; sourceTree = "<group>"; };
 		FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,8 @@
 				FC1F4B031C8BB6D9001650BA /* AboutVC.swift */,
 				FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */,
 				FC0947141C8CBA1B0054BEB2 /* CardSwipeVC.swift */,
+				FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */,
+				FC61D9B01C91E5AF000F13DD /* Interactor.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				FC1F4B281C8BBB86001650BA /* IQUIScrollView+Additions.swift in Sources */,
 				FC1F4B2A1C8BBB86001650BA /* IQUIView+Hierarchy.swift in Sources */,
 				FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */,
+				FC61D9AF1C91E585000F13DD /* DismissAnimator.swift in Sources */,
 				FC0947131C8CA9EC0054BEB2 /* TransparentBlack.swift in Sources */,
 				FC1F4B331C8BBB86001650BA /* IQTitleBarButtonItem.swift in Sources */,
 				FC1F4AEB1C8B9A6D001650BA /* Cinema.xcdatamodeld in Sources */,
@@ -331,6 +338,7 @@
 				FC1F4B2F1C8BBB86001650BA /* IQKeyboardManager.swift in Sources */,
 				FC1F4B021C8BB2B2001650BA /* CircleImageBounds.swift in Sources */,
 				FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */,
+				FC61D9B11C91E5AF000F13DD /* Interactor.swift in Sources */,
 				FC1F4B321C8BBB86001650BA /* IQBarButtonItem.swift in Sources */,
 				FC1F4AFF1C8BA941001650BA /* RoundedCornersView.swift in Sources */,
 				FC1F4B341C8BBB86001650BA /* IQToolbar.swift in Sources */,

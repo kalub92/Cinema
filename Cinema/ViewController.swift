@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     var movies = [Movie]()
+    let interactor = Interactor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,21 +72,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if let destinationViewController = segue.destinationViewController as? DetailVC {
+                destinationViewController.transitioningDelegate = self
+                destinationViewController.interactor = interactor // new
+            }
         
         if segue.identifier == "loadDetail" {
-        let loadDetailView = segue.destinationViewController as! DetailVC
             if let selectedMovieCell = sender as? MovieCell {
                 loadDetailView.indexPath = tableView.indexPathForCell(selectedMovieCell)
             }
-
         }
-    }
-    
+        
     func reloadFromAfar() {
         fetchAndSetResults()
         tableView.reloadData()
     }
     
+}
 
-    
 }
