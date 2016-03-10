@@ -67,27 +67,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return self.movies[indexPath.row]
     }
     
-    @IBAction func loadDetailView(sender: MovieCell) {
-        performSegueWithIdentifier("loadDetail", sender: nil)
+    func showModal() {
+        let modalViewController = DetailVC()
+        modalViewController.modalPresentationStyle = .OverCurrentContext
+        presentViewController(modalViewController, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if let destinationViewController = segue.destinationViewController as? DetailVC {
-                destinationViewController.transitioningDelegate = self
-                destinationViewController.interactor = interactor // new
-            }
-        
-        if segue.identifier == "loadDetail" {
-            if let selectedMovieCell = sender as? MovieCell {
-                loadDetailView.indexPath = tableView.indexPathForCell(selectedMovieCell)
+
+        if let destinationViewController = segue.destinationViewController as? DetailVC {
+            destinationViewController.transitioningDelegate = self
+            destinationViewController.interactor = interactor // new
+            
+            if segue.identifier == "loadDetail" {
+                if let selectedMovieCell = sender as? MovieCell {
+                    destinationViewController.indexPath = tableView.indexPathForCell(selectedMovieCell)
+                }
             }
         }
-        
-    func reloadFromAfar() {
-        fetchAndSetResults()
-        tableView.reloadData()
     }
-    
 }
 
+    extension ViewController: UIViewControllerTransitioningDelegate {
+        func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+            return interactor.hasStarted ? interactor : nil
+        }
+        func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+            return DismissAnimator()
+        }
 }

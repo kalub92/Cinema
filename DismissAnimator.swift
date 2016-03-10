@@ -41,7 +41,6 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
             }
         )
-        
     }
 }
 

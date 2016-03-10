@@ -24,14 +24,19 @@ class DetailVC: UIViewController {
  
     var fetchedResultsController: NSFetchedResultsController!
     
+    override func viewDidLoad() {
+        view.backgroundColor = UIColor.clearColor()
+        view.opaque = false
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        fetchAndSetResults()
-        let movie = movies[indexPath.row]
-        configureDetails(movie)
         UIView.animateWithDuration(0.7, animations: {
             self.transparentView.alpha = 0.7
         })
+        fetchAndSetResults()
+        let movie = movies[indexPath.row]
+        configureDetails(movie)
     }
     
     func fetchAndSetResults() {
