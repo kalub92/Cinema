@@ -30,13 +30,12 @@ class DetailVC: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        UIView.animateWithDuration(0.7, animations: {
-            self.transparentView.alpha = 0.7
-        })
         fetchAndSetResults()
         let movie = movies[indexPath.row]
         configureDetails(movie)
+        UIView.animateWithDuration(0.7, animations: {
+            self.transparentView.alpha = 0.7
+        })
     }
     
     func fetchAndSetResults() {
@@ -57,10 +56,6 @@ class DetailVC: UIViewController {
         moviePoster.image = movie.getMovieImg()
         movieReview.text = movie.review
         movieURL.text = movie.link
-    }
-
-    @IBAction func cancelBtn(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func handleGesture(sender: UIPanGestureRecognizer) {
@@ -97,9 +92,10 @@ class DetailVC: UIViewController {
     }
     
     func showHelperCircle(){
-        let center = CGPoint(x: view.bounds.width * 0.5, y: 100)
+        let center = CGPoint(x: transparentView.bounds.width * 0.5, y: 100)
         let small = CGSize(width: 30, height: 30)
         let circle = UIView(frame: CGRect(origin: center, size: small))
+        circle.center = CGPoint(x: transparentView.bounds.width * 0.5, y: 100)
         circle.layer.cornerRadius = circle.frame.width/2
         circle.backgroundColor = UIColor.whiteColor()
         circle.layer.shadowOpacity = 0.8

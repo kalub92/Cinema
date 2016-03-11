@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var movies = [Movie]()
     let interactor = Interactor()
+    let detailViewController = DetailVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,14 +68,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return self.movies[indexPath.row]
     }
     
-    func showModal() {
-        let modalViewController = DetailVC()
-        modalViewController.modalPresentationStyle = .OverCurrentContext
-        presentViewController(modalViewController, animated: true, completion: nil)
-    }
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
+        
         if let destinationViewController = segue.destinationViewController as? DetailVC {
             destinationViewController.transitioningDelegate = self
             destinationViewController.interactor = interactor // new

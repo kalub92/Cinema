@@ -12,6 +12,8 @@ import UIKit
 class DismissAnimator : NSObject {
 }
 
+var mainViewController = ViewController()
+
 extension DismissAnimator : UIViewControllerAnimatedTransitioning {
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.6
@@ -39,8 +41,9 @@ extension DismissAnimator : UIViewControllerAnimatedTransitioning {
             },
             completion: { _ in
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+                UIApplication.sharedApplication().keyWindow!.addSubview(toVC.view)
+                UIApplication.sharedApplication().keyWindow!.sendSubviewToBack(toVC.view)
             }
-        )
-    }
+    )}
 }
 
