@@ -11,7 +11,9 @@ import UIKit
 import CoreData
 
 class DetailVC: UIViewController {
-
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieReview: UILabel!
@@ -21,14 +23,23 @@ class DetailVC: UIViewController {
     var movies = [Movie]()
     var indexPath: NSIndexPath!
     var interactor:Interactor? = nil
- 
+    
     var fetchedResultsController: NSFetchedResultsController!
     
     override func viewDidLoad() {
         view.backgroundColor = UIColor.clearColor()
         view.opaque = false
+        
     }
     
+    override func viewDidAppear(animated: Bool) {
+        if (defaults.boolForKey("initialRun") == false) {
+            showHelperCircle()
+            defaults.setBool(true, forKey: "initialRun")
+        }
+        defaults.setBool(true, forKey: "initialRun")
+    }
+
     override func viewWillAppear(animated: Bool) {
         fetchAndSetResults()
         let movie = movies[indexPath.row]
@@ -49,6 +60,7 @@ class DetailVC: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
+
     }
     
     func configureDetails(movie: Movie) {
@@ -92,13 +104,14 @@ class DetailVC: UIViewController {
     }
     
     func showHelperCircle(){
+        
         let center = CGPoint(x: transparentView.bounds.width * 0.5, y: 100)
         let small = CGSize(width: 30, height: 30)
         let circle = UIView(frame: CGRect(origin: center, size: small))
         circle.center = CGPoint(x: transparentView.bounds.width * 0.5, y: 100)
         circle.layer.cornerRadius = circle.frame.width/2
         circle.backgroundColor = UIColor.whiteColor()
-        circle.layer.shadowOpacity = 0.8
+        circle.layer.shadowOpacity = 0.5
         circle.layer.shadowOffset = CGSizeZero
         view.addSubview(circle)
         UIView.animateWithDuration(
@@ -112,11 +125,6 @@ class DetailVC: UIViewController {
             completion: { _ in
                 circle.removeFromSuperview()
             }
-        )
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        showHelperCircle()
-    }
+    )}
     
 }
