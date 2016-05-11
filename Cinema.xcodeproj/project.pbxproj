@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5DB6CC2495A1D96764A0E9 /* Pods_Cinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152F0A5386934A4D78A27D7C /* Pods_Cinema.framework */; };
 		FC0946CF1C8C43270054BEB2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0946CD1C8C43270054BEB2 /* Movie.swift */; };
 		FC0946D51C8C43CC0054BEB2 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0946D41C8C43CC0054BEB2 /* MovieCell.swift */; };
 		FC0947131C8CA9EC0054BEB2 /* TransparentBlack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0947121C8CA9EC0054BEB2 /* TransparentBlack.swift */; };
@@ -41,12 +42,28 @@
 		FC1F4B381C8C289C001650BA /* RoundedCornersTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */; };
 		FC1F4B3A1C8C29FA001650BA /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */; };
 		FC2537071C9394D200354B6C /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2537041C9394D200354B6C /* Movie+CoreDataProperties.swift */; };
+		FC4C5F281C93E27C00ECF625 /* CinemaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C5F271C93E27C00ECF625 /* CinemaUITests.swift */; };
 		FC61D9AF1C91E585000F13DD /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */; };
 		FC61D9B11C91E5AF000F13DD /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC61D9B01C91E5AF000F13DD /* Interactor.swift */; };
 		FCD4F90C1C8DF02C000BED88 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */; };
+		FCD6EF3B1CDF5609004AE6D3 /* NoPostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6EF3A1CDF5609004AE6D3 /* NoPostsVC.swift */; };
+		FCD6EF3D1CDF5ACF004AE6D3 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6EF3C1CDF5ACF004AE6D3 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FC4C5F2A1C93E27C00ECF625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC1F4AD71C8B9A6D001650BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC1F4ADE1C8B9A6D001650BA;
+			remoteInfo = Cinema;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		152F0A5386934A4D78A27D7C /* Pods_Cinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C9479B003E9820B81D53AA /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
+		DA06EF596D4C1C1F1A3574DA /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cinema/Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
 		FC0946CD1C8C43270054BEB2 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 		FC0946D41C8C43CC0054BEB2 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		FC0947121C8CA9EC0054BEB2 /* TransparentBlack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBlack.swift; sourceTree = "<group>"; };
@@ -83,13 +100,26 @@
 		FC1F4B371C8C289C001650BA /* RoundedCornersTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersTF.swift; sourceTree = "<group>"; };
 		FC1F4B391C8C29FA001650BA /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
 		FC2537041C9394D200354B6C /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC4C5F251C93E27C00ECF625 /* CinemaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4C5F271C93E27C00ECF625 /* CinemaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaUITests.swift; sourceTree = "<group>"; };
+		FC4C5F291C93E27C00ECF625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DismissAnimator.swift; path = ../DismissAnimator.swift; sourceTree = "<group>"; };
 		FC61D9B01C91E5AF000F13DD /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = ../Interactor.swift; sourceTree = "<group>"; };
 		FCD4F90B1C8DF02C000BED88 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		FCD6EF3A1CDF5609004AE6D3 /* NoPostsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPostsVC.swift; sourceTree = "<group>"; };
+		FCD6EF3C1CDF5ACF004AE6D3 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC1F4ADC1C8B9A6D001650BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5DB6CC2495A1D96764A0E9 /* Pods_Cinema.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4C5F221C93E27C00ECF625 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -99,11 +129,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA74C3C0C977619D6F45D4A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19C9479B003E9820B81D53AA /* Pods-Cinema.debug.xcconfig */,
+				DA06EF596D4C1C1F1A3574DA /* Pods-Cinema.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9BC875374AA45D6CF129C34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152F0A5386934A4D78A27D7C /* Pods_Cinema.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC1F4AD61C8B9A6D001650BA = {
 			isa = PBXGroup;
 			children = (
 				FC1F4AE11C8B9A6D001650BA /* Cinema */,
+				FC4C5F261C93E27C00ECF625 /* CinemaUITests */,
 				FC1F4AE01C8B9A6D001650BA /* Products */,
+				F9BC875374AA45D6CF129C34 /* Frameworks */,
+				EA74C3C0C977619D6F45D4A6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FC1F4ADF1C8B9A6D001650BA /* Cinema.app */,
+				FC4C5F251C93E27C00ECF625 /* CinemaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +191,7 @@
 				FC0947141C8CBA1B0054BEB2 /* CardSwipeVC.swift */,
 				FC61D9AE1C91E585000F13DD /* DismissAnimator.swift */,
 				FC61D9B01C91E5AF000F13DD /* Interactor.swift */,
+				FCD6EF3A1CDF5609004AE6D3 /* NoPostsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				FC1F4AFA1C8B9FDB001650BA /* RoundedCornersVC.swift */,
+				FCD6EF3C1CDF5ACF004AE6D3 /* RoundedButton.swift */,
 				FC1F4AFC1C8BA0E4001650BA /* RoundedCornersTVC.swift */,
 				FC1F4AFE1C8BA941001650BA /* RoundedCornersView.swift */,
 				FC1F4B011C8BB2B2001650BA /* CircleImageBounds.swift */,
@@ -241,6 +294,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FC4C5F261C93E27C00ECF625 /* CinemaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC4C5F271C93E27C00ECF625 /* CinemaUITests.swift */,
+				FC4C5F291C93E27C00ECF625 /* Info.plist */,
+			);
+			path = CinemaUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC1F4AF41C8B9A6D001650BA /* Build configuration list for PBXNativeTarget "Cinema" */;
 			buildPhases = (
+				C651D21FD30DDFF604167E1E /* 📦 Check Pods Manifest.lock */,
 				FC1F4ADB1C8B9A6D001650BA /* Sources */,
 				FC1F4ADC1C8B9A6D001650BA /* Frameworks */,
 				FC1F4ADD1C8B9A6D001650BA /* Resources */,
+				25B0BC07C753F8632ED8E985 /* 📦 Embed Pods Frameworks */,
+				9B3325E9F132435351E116BF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +325,24 @@
 			productName = Cinema;
 			productReference = FC1F4ADF1C8B9A6D001650BA /* Cinema.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC4C5F241C93E27C00ECF625 /* CinemaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4C5F2E1C93E27C00ECF625 /* Build configuration list for PBXNativeTarget "CinemaUITests" */;
+			buildPhases = (
+				FC4C5F211C93E27C00ECF625 /* Sources */,
+				FC4C5F221C93E27C00ECF625 /* Frameworks */,
+				FC4C5F231C93E27C00ECF625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4C5F2B1C93E27C00ECF625 /* PBXTargetDependency */,
+			);
+			name = CinemaUITests;
+			productName = CinemaUITests;
+			productReference = FC4C5F251C93E27C00ECF625 /* CinemaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -274,6 +357,11 @@
 					FC1F4ADE1C8B9A6D001650BA = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = HLCDLFXF5Y;
+					};
+					FC4C5F241C93E27C00ECF625 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = HLCDLFXF5Y;
+						TestTargetID = FC1F4ADE1C8B9A6D001650BA;
 					};
 				};
 			};
@@ -291,6 +379,7 @@
 			projectRoot = "";
 			targets = (
 				FC1F4ADE1C8B9A6D001650BA /* Cinema */,
+				FC4C5F241C93E27C00ECF625 /* CinemaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +396,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC4C5F231C93E27C00ECF625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25B0BC07C753F8632ED8E985 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cinema/Pods-Cinema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3325E9F132435351E116BF /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cinema/Pods-Cinema-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C651D21FD30DDFF604167E1E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC1F4ADB1C8B9A6D001650BA /* Sources */ = {
@@ -315,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC1F4AE51C8B9A6D001650BA /* ViewController.swift in Sources */,
+				FCD6EF3B1CDF5609004AE6D3 /* NoPostsVC.swift in Sources */,
 				FC1F4AFD1C8BA0E5001650BA /* RoundedCornersTVC.swift in Sources */,
 				FC1F4AE31C8B9A6D001650BA /* AppDelegate.swift in Sources */,
 				FC1F4B2E1C8BBB86001650BA /* IQKeyboardManagerConstantsInternal.swift in Sources */,
@@ -324,6 +469,7 @@
 				FC61D9AF1C91E585000F13DD /* DismissAnimator.swift in Sources */,
 				FC0947131C8CA9EC0054BEB2 /* TransparentBlack.swift in Sources */,
 				FC1F4B331C8BBB86001650BA /* IQTitleBarButtonItem.swift in Sources */,
+				FCD6EF3D1CDF5ACF004AE6D3 /* RoundedButton.swift in Sources */,
 				FC1F4AEB1C8B9A6D001650BA /* Cinema.xcdatamodeld in Sources */,
 				FC1F4B2B1C8BBB86001650BA /* IQUIViewController+Additions.swift in Sources */,
 				FC1F4B301C8BBB86001650BA /* IQKeyboardReturnKeyHandler.swift in Sources */,
@@ -350,7 +496,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC4C5F211C93E27C00ECF625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4C5F281C93E27C00ECF625 /* CinemaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC4C5F2B1C93E27C00ECF625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC1F4ADE1C8B9A6D001650BA /* Cinema */;
+			targetProxy = FC4C5F2A1C93E27C00ECF625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC1F4AE61C8B9A6D001650BA /* Main.storyboard */ = {
@@ -455,6 +617,7 @@
 		};
 		FC1F4AF51C8B9A6D001650BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C9479B003E9820B81D53AA /* Pods-Cinema.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cinema/Info.plist;
@@ -468,6 +631,7 @@
 		};
 		FC1F4AF61C8B9A6D001650BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA06EF596D4C1C1F1A3574DA /* Pods-Cinema.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cinema/Info.plist;
@@ -476,6 +640,30 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.Cinema;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC4C5F2C1C93E27C00ECF625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = CinemaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.CinemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cinema;
+			};
+			name = Debug;
+		};
+		FC4C5F2D1C93E27C00ECF625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = CinemaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.CinemaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Cinema;
 			};
 			name = Release;
 		};
@@ -496,6 +684,15 @@
 			buildConfigurations = (
 				FC1F4AF51C8B9A6D001650BA /* Debug */,
 				FC1F4AF61C8B9A6D001650BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4C5F2E1C93E27C00ECF625 /* Build configuration list for PBXNativeTarget "CinemaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4C5F2C1C93E27C00ECF625 /* Debug */,
+				FC4C5F2D1C93E27C00ECF625 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

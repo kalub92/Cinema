@@ -12,6 +12,7 @@ class AboutVC: UIViewController {
 
     @IBOutlet weak var aboutView: UIView!
     @IBOutlet weak var transparentView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

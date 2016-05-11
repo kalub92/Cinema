@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		351877FD4FB5A65CE0F37144E3F165CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		3E5430A6A83B78BB35EE8AABE5AA842C /* Pods-Cinema-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FD15DDF5D6C7A15CC504124BEE35D33 /* Pods-Cinema-dummy.m */; };
+		79CB853DEF5B29C862761AB8CDF1E1EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		7D13BB8B3F500199DD48FB5437425951 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1844803357BE883AC0F7912CD79C437F /* SwiftLoader.swift */; };
+		BA10F4CCCF282EC393BE3F5FD5896E3C /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F050ECC365B24E9B19F9169CB234FBC /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE0B2643826B281F5D2AF1E932A414FC /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3DD5BAC0027C37618FEA091FBA0E33C /* SwiftLoader-dummy.m */; };
+		D4ED111D2799BAB4938E602844055624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		FD9E9E2EEA366114068401E9AD4BED23 /* Pods-Cinema-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05F2E70AF9CC1EE8DD28CAFDCE207BD9 /* Pods-Cinema-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		402EF3400929337C06A12EB92EB0DDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2504FF5282A52451DFDC8901E416B866;
+			remoteInfo = SwiftLoader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05F2E70AF9CC1EE8DD28CAFDCE207BD9 /* Pods-Cinema-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cinema-umbrella.h"; sourceTree = "<group>"; };
+		09ADC981F7B7B10EA1953B48B0BA3707 /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
+		0FEC589641D26E7021B75D73BF3F628C /* Pods-Cinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinema.release.xcconfig"; sourceTree = "<group>"; };
+		1844803357BE883AC0F7912CD79C437F /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
+		30CE7465B6BB9B5FC5129EFFDBAEE4AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F050ECC365B24E9B19F9169CB234FBC /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
+		3FD15DDF5D6C7A15CC504124BEE35D33 /* Pods-Cinema-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cinema-dummy.m"; sourceTree = "<group>"; };
+		493FE467FD8EB433B9B18072DBBC3295 /* Pods-Cinema-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cinema-acknowledgements.markdown"; sourceTree = "<group>"; };
+		657620253B16D50552C7A45F3FF881C8 /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
+		767C80C155279247331FEC2B4C6A891D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78ACB9D261BFDD3CCD4202A56ED432DF /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
+		7F3D50AA74322F7EBD037B8019362F46 /* Pods-Cinema-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cinema-resources.sh"; sourceTree = "<group>"; };
+		7F45E2667F30F5C0A5BD2FBD58FE2C88 /* Pods-Cinema-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cinema-acknowledgements.plist"; sourceTree = "<group>"; };
+		83C282E7168E2CB44A28213B57E13C9B /* Pods-Cinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cinema.debug.xcconfig"; sourceTree = "<group>"; };
+		8C54BB828CF5CC447F7410D472A8282C /* Pods-Cinema-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cinema-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A3DD5BAC0027C37618FEA091FBA0E33C /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
+		C626B246885E7AA68E89864F8ADD9E59 /* Pods_Cinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A1B8740A061D6CB554F3ADF28532E7 /* SwiftLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EFA076A422FEF8FFE8818199D914D7FD /* Pods-Cinema.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Cinema.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9893A0FD24C25EFC3B6B28E937734BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4ED111D2799BAB4938E602844055624 /* Foundation.framework in Frameworks */,
+				351877FD4FB5A65CE0F37144E3F165CB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12E4D1C1CB23EBBDE6B08D86E52E26B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CB853DEF5B29C862761AB8CDF1E1EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066C9561213AF2907B1D1A734D87A22E /* Pods-Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				767C80C155279247331FEC2B4C6A891D /* Info.plist */,
+				EFA076A422FEF8FFE8818199D914D7FD /* Pods-Cinema.modulemap */,
+				493FE467FD8EB433B9B18072DBBC3295 /* Pods-Cinema-acknowledgements.markdown */,
+				7F45E2667F30F5C0A5BD2FBD58FE2C88 /* Pods-Cinema-acknowledgements.plist */,
+				3FD15DDF5D6C7A15CC504124BEE35D33 /* Pods-Cinema-dummy.m */,
+				8C54BB828CF5CC447F7410D472A8282C /* Pods-Cinema-frameworks.sh */,
+				7F3D50AA74322F7EBD037B8019362F46 /* Pods-Cinema-resources.sh */,
+				05F2E70AF9CC1EE8DD28CAFDCE207BD9 /* Pods-Cinema-umbrella.h */,
+				83C282E7168E2CB44A28213B57E13C9B /* Pods-Cinema.debug.xcconfig */,
+				0FEC589641D26E7021B75D73BF3F628C /* Pods-Cinema.release.xcconfig */,
+			);
+			name = "Pods-Cinema";
+			path = "Target Support Files/Pods-Cinema";
+			sourceTree = "<group>";
+		};
+		1E12D7FFC76F8BCD037F8C74B1D5ACF4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				066C9561213AF2907B1D1A734D87A22E /* Pods-Cinema */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		449D8480AAAA62F59C3292BD79519FBD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30CE7465B6BB9B5FC5129EFFDBAEE4AA /* Info.plist */,
+				78ACB9D261BFDD3CCD4202A56ED432DF /* SwiftLoader.modulemap */,
+				09ADC981F7B7B10EA1953B48B0BA3707 /* SwiftLoader.xcconfig */,
+				A3DD5BAC0027C37618FEA091FBA0E33C /* SwiftLoader-dummy.m */,
+				657620253B16D50552C7A45F3FF881C8 /* SwiftLoader-prefix.pch */,
+				3F050ECC365B24E9B19F9169CB234FBC /* SwiftLoader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLoader";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DEE9A7BE70DC1DACD1C412DA10CE50C3 /* Pods */,
+				BD7E696E95F03CCB35650C1A510C7AB8 /* Products */,
+				1E12D7FFC76F8BCD037F8C74B1D5ACF4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B432B04D4044583549CEE97157B016D2 /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1844803357BE883AC0F7912CD79C437F /* SwiftLoader.swift */,
+				449D8480AAAA62F59C3292BD79519FBD /* Support Files */,
+			);
+			path = SwiftLoader;
+			sourceTree = "<group>";
+		};
+		BD7E696E95F03CCB35650C1A510C7AB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C626B246885E7AA68E89864F8ADD9E59 /* Pods_Cinema.framework */,
+				E2A1B8740A061D6CB554F3ADF28532E7 /* SwiftLoader.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEE9A7BE70DC1DACD1C412DA10CE50C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B432B04D4044583549CEE97157B016D2 /* SwiftLoader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		51789256E51597673DB4747CE802304F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA10F4CCCF282EC393BE3F5FD5896E3C /* SwiftLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4256D33658C15A75974C3EB6E3A8AB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9E9E2EEA366114068401E9AD4BED23 /* Pods-Cinema-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2504FF5282A52451DFDC8901E416B866 /* SwiftLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FBEE565D6DB62AE82F7AFBF886B269 /* Build configuration list for PBXNativeTarget "SwiftLoader" */;
+			buildPhases = (
+				6A678E473354E33186D2FAC58958FB10 /* Sources */,
+				9893A0FD24C25EFC3B6B28E937734BF9 /* Frameworks */,
+				51789256E51597673DB4747CE802304F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftLoader;
+			productName = SwiftLoader;
+			productReference = E2A1B8740A061D6CB554F3ADF28532E7 /* SwiftLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6224820C18B22E4A3E17E291B4BDB24 /* Pods-Cinema */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC2405B836644DF8DDAE6B8D2D0C8A7 /* Build configuration list for PBXNativeTarget "Pods-Cinema" */;
+			buildPhases = (
+				FDE551EE92CA77CA64DCB619851B7568 /* Sources */,
+				A12E4D1C1CB23EBBDE6B08D86E52E26B /* Frameworks */,
+				B4256D33658C15A75974C3EB6E3A8AB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E4970F8ABD572ADEE49ECDE8C39F1CC /* PBXTargetDependency */,
+			);
+			name = "Pods-Cinema";
+			productName = "Pods-Cinema";
+			productReference = C626B246885E7AA68E89864F8ADD9E59 /* Pods_Cinema.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BD7E696E95F03CCB35650C1A510C7AB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6224820C18B22E4A3E17E291B4BDB24 /* Pods-Cinema */,
+				2504FF5282A52451DFDC8901E416B866 /* SwiftLoader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A678E473354E33186D2FAC58958FB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0B2643826B281F5D2AF1E932A414FC /* SwiftLoader-dummy.m in Sources */,
+				7D13BB8B3F500199DD48FB5437425951 /* SwiftLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE551EE92CA77CA64DCB619851B7568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E5430A6A83B78BB35EE8AABE5AA842C /* Pods-Cinema-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E4970F8ABD572ADEE49ECDE8C39F1CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLoader;
+			target = 2504FF5282A52451DFDC8901E416B866 /* SwiftLoader */;
+			targetProxy = 402EF3400929337C06A12EB92EB0DDEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		36F50FB6358DD19A89B7F7C5534E5BC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C282E7168E2CB44A28213B57E13C9B /* Pods-Cinema.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinema/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinema/Pods-Cinema.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cinema;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51ADF60CDAD25D582C58AC31142BB4FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09ADC981F7B7B10EA1953B48B0BA3707 /* SwiftLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABD702162D3ECEDE5F52B4AA8CE11FB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09ADC981F7B7B10EA1953B48B0BA3707 /* SwiftLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLoader/SwiftLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftLoader/SwiftLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F114DAE5489E6DC857E7DC047EEB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEC589641D26E7021B75D73BF3F628C /* Pods-Cinema.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cinema/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cinema/Pods-Cinema.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cinema;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC2405B836644DF8DDAE6B8D2D0C8A7 /* Build configuration list for PBXNativeTarget "Pods-Cinema" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F50FB6358DD19A89B7F7C5534E5BC1 /* Debug */,
+				D5F114DAE5489E6DC857E7DC047EEB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FBEE565D6DB62AE82F7AFBF886B269 /* Build configuration list for PBXNativeTarget "SwiftLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD702162D3ECEDE5F52B4AA8CE11FB1 /* Debug */,
+				51ADF60CDAD25D582C58AC31142BB4FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

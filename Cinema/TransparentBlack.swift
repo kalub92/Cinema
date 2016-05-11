@@ -13,7 +13,8 @@ class TransparentBlack: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        self.backgroundColor = UIColor.blackColor()
+        self.alpha = 0.7
         
     }
 

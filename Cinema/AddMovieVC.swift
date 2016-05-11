@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwiftLoader
 
 class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
@@ -16,6 +17,7 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     @IBOutlet weak var movieTitle: RoundedCornersTF!
     @IBOutlet weak var movieReview: RoundedCornersTF!
     @IBOutlet weak var imdbLink: RoundedCornersTF!
+    
     var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
@@ -25,6 +27,11 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         imagePicker.delegate = self
         addMovieView.layer.cornerRadius = 15.0
         addMovieView.clipsToBounds = true
+        
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
@@ -57,15 +64,14 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
                 print("Could not save movie")
             }
             
-            self.dismissViewControllerAnimated(true, completion: nil)
+            SwiftLoader.show(title: "Saving...", animated: true)
             
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
-}
-    
-    @IBAction func onCancelPressed(sender: AnyObject) {
+    @IBAction func cancelPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-
 }
 
 

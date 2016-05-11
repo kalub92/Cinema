@@ -19,6 +19,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var movieReview: UILabel!
     @IBOutlet weak var movieURL: UILabel!
     @IBOutlet weak var transparentView: UIView!
+    @IBOutlet weak var reviewView: UIStackView!
     
     var movies = [Movie]()
     var indexPath: NSIndexPath!
@@ -27,9 +28,10 @@ class DetailVC: UIViewController {
     var fetchedResultsController: NSFetchedResultsController!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         view.backgroundColor = UIColor.clearColor()
         view.opaque = false
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -44,9 +46,6 @@ class DetailVC: UIViewController {
         fetchAndSetResults()
         let movie = movies[indexPath.row]
         configureDetails(movie)
-        UIView.animateWithDuration(0.7, animations: {
-            self.transparentView.alpha = 0.7
-        })
     }
     
     func fetchAndSetResults() {
@@ -72,7 +71,7 @@ class DetailVC: UIViewController {
     
     @IBAction func handleGesture(sender: UIPanGestureRecognizer) {
         
-        let percentThreshold:CGFloat = 0.3
+        let percentThreshold:CGFloat = 0.1
         
         // convert y-position to downward pull progress (percentage)
         let translation = sender.translationInView(view)
